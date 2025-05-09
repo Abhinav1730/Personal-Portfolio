@@ -19,6 +19,7 @@ import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
+import program from "./program.webp";
 import profile_img from "./profile_img.jpeg";
 import download_icon from "./download-icon.png";
 import hand_icon from "./hand-icon.png";
@@ -28,6 +29,7 @@ import sun_icon from "./sun_icon.png";
 import arrow_icon from "./arrow-icon.png";
 import arrow_icon_dark from "./arrow-icon-dark.png";
 import menu_black from "./menu-black.png";
+import supabase from "./supabase.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
@@ -42,6 +44,7 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import postman from "./postman.webp";
 import cursor_app_icon from "./cursor-app-icon.png";
+import thunderclient from "./thunderclient.jpg";
 
 export const assets = {
   user_image,
@@ -56,6 +59,7 @@ export const assets = {
   figma,
   git,
   mongodb,
+  thunderclient,
   right_arrow_white,
   logo,
   logo_dark,
@@ -88,6 +92,8 @@ export const assets = {
   ai_for_services,
   blockchain,
   aivami,
+  program,
+  supabase,
 };
 
 export const workData = [
@@ -140,6 +146,12 @@ export const infoList = [
     description: "React Js, Next Js, Node Js, Express Js",
   },
   {
+    icon: assets.program,
+    iconDark: assets.code_icon_dark,
+    title: "Programming Languages",
+    description: "JavaScript , Python ,C++",
+  },
+  {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
@@ -158,7 +170,9 @@ export const toolsData = [
   assets.cursor_app_icon,
   assets.git,
   assets.mongodb,
+  assets.supabase,
   assets.postman,
+  assets.thunderclient,
   assets.firebase,
   assets.figma,
 ];
