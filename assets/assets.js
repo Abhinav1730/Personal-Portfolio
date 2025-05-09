@@ -8,9 +8,11 @@ import project_icon_dark from "./project-icon-dark.png";
 import blockchain from "./blockchain.jpeg";
 import vscode from "./vscode.png";
 import firebase from "./firebase.png";
+import aivami from "./aivami.png";
 import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
+import deepseek from "./deepseek.png";
 import right_arrow_white from "./right-arrow-white.png";
 import ai_for_services from "./ai-for-services.jpg";
 import logo from "./logo.png";
@@ -34,6 +36,7 @@ import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
+import logo_of_reliefcare from "./logo of reliefcare.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
@@ -66,6 +69,8 @@ export const assets = {
   sun_icon,
   arrow_icon,
   arrow_icon_dark,
+  logo_of_reliefcare,
+  deepseek,
   menu_black,
   menu_white,
   close_black,
@@ -82,28 +87,27 @@ export const assets = {
   cursor_app_icon,
   ai_for_services,
   blockchain,
+  aivami,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    icon: assets.logo_of_reliefcare,
+    title: "ReliefCare - A Full Stack Application",
+    description:
+      "ReliefCare is an advanced doctor appointment booking application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application aims to streamline the healthcare experience by allowing patients to find doctors nearby, book appointments, and engage in online consultations—all from the comfort of their homes. The core concept addresses real-life challenges faced by patients, such as long hospital queues and complex appointment procedures.",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    icon: assets.aivami,
+    title: "AIvaMI - A Full Stack AI Assistance",
+    description:
+      " Built an AI-powered mock interview platform using Next.js, Vapi AI, Supabase, and Google Cloud for authentication,enabling users to conduct realistic voice-based interviews with an AI assistant.Implemented the Vapi AI API tohandle real-time voice input and output, allowing dynamic conversation flow through speech synthesis and recognition.Integrated Supabase for real-time database management and user data storage, while Google Cloud Authenticationensured secure and scalable login functionality. Designed an intuitive and responsive UI with ShadCN and Lucide-React, delivering a polished user experience that mirrors real-world interview scenarios. This project demonstrates a deep understanding of modern full-stack development, voice interface integration, and secure authentication systems.",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    icon: assets.deepseek,
+    title: "DeepSeek AI Clone",
+    description:
+      "Developed a modern, full-stack AI chat application inspired by ChatGPT and DeepSeek, leveraging Google’s Gemini API for advanced natural language processing. Built with Next.js 13 App Router and a modular architecture to enable scalable, efficient server and client-side rendering. Integrated Clerk for secure user authentication and MongoDB for persistent chat history and session data. Designed the platform to support seamless natural language interactions,serving as a robust foundation for real-world AI applications. This project also highlights practical implementation of prompt engineering and provides a scalable template for extending features like voice-to-text, image input, and prompt history.",
   },
 ];
 
