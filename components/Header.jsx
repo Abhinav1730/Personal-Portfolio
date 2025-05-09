@@ -20,7 +20,7 @@ const Header = () => {
         Full Stack Developer
       </h1>
       <p className="max-w-2xl mx-auto font-extralight">
-        I'm a full-stack developer and currently in my third year of Engineering
+        I'm a full-stack developer and persuing Engineering(ECE)
         specializing in the MERN stack, Next.js, and RESTful APIs along with
         slight Devops and ML. Passionate about solving real-world problems
         through technology and constantly exploring new tools and frameworks to
