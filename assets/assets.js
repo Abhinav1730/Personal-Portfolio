@@ -5,12 +5,14 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
+import blockchain from "./blockchain.jpeg";
 import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
+import ai_for_services from "./ai-for-services.jpg";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
@@ -27,7 +29,7 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
+import web_icon from "./web-icon.jpg";
 import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
@@ -36,7 +38,7 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import postman from "./postman.webp";
-import cursor_app_icon from "./cursor-app-icon.png"
+import cursor_app_icon from "./cursor-app-icon.png";
 
 export const assets = {
   user_image,
@@ -77,7 +79,9 @@ export const assets = {
   right_arrow_bold,
   right_arrow_bold_dark,
   postman,
-  cursor_app_icon
+  cursor_app_icon,
+  ai_for_services,
+  blockchain,
 };
 
 export const workData = [
@@ -106,29 +110,21 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Full Stack Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "Full stack development with MERN and Next.js involves building web applications using MongoDB, Express.js, React, and Node.js, with Next.js adding server-side rendering and improved performance for React apps.",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.ai_for_services,
+    title: "AI Integration",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+      "A full stack developer with AI integration expertise designs and builds complete applications that seamlessly blend user interfaces, server-side logic, and intelligent features. They leverage AI models and APIs—such as language processing, image recognition, or predictive analytics—to enhance functionality, automate tasks, and create smarter, data-driven user experiences across web and mobile platforms.",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    icon: assets.blockchain,
+    title: "BlockChain Enthusiast",
+    description:
+      "A full stack developer who is a blockchain enthusiast builds comprehensive applications while integrating decentralized technologies. They develop smart contracts, work with blockchain protocols like Ethereum or Solana, and create secure, transparent, and trustless systems. Their expertise bridges traditional web development with emerging Web3 innovations, enabling features like crypto transactions, NFTs, and decentralized identity.",
   },
 ];
 
