@@ -99,6 +99,7 @@ export const assets = {
 export const workData = [
   {
     icon: assets.logo_of_reliefcare,
+    link:"https://reliefcare-frontend.onrender.com/",
     title: "ReliefCare - A Full Stack Application",
     description:
       "ReliefCare is an advanced doctor appointment booking application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application aims to streamline the healthcare experience by allowing patients to find doctors nearby, book appointments, and engage in online consultations—all from the comfort of their homes. The core concept addresses real-life challenges faced by patients, such as long hospital queues and complex appointment procedures.",
@@ -114,6 +115,7 @@ export const workData = [
     title: "DeepSeek AI Clone",
     description:
       "Developed a modern, full-stack AI chat application inspired by ChatGPT and DeepSeek, leveraging Google’s Gemini API for advanced natural language processing. Built with Next.js 13 App Router and a modular architecture to enable scalable, efficient server and client-side rendering. Integrated Clerk for secure user authentication and MongoDB for persistent chat history and session data. Designed the platform to support seamless natural language interactions,serving as a robust foundation for real-world AI applications. This project also highlights practical implementation of prompt engineering and provides a scalable template for extending features like voice-to-text, image input, and prompt history.",
+    link:"https://deep-seek-ai-clone-black.vercel.app/"
   },
 ];
 

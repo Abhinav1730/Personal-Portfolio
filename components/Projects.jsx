@@ -35,7 +35,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.9 }}
           className="grid grid-cols-[repeat(auto-fit)] gap-6 my-10"
         >
-          {workData.map(({ title, description, icon }, index) => (
+          {workData.map(({ title, description, icon, link }, index) => (
             <motion.div
               whileInView={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -52,31 +52,22 @@ const Projects = () => {
                     {description}
                   </p>
                 </div>
-                <div>
-                  <Image
-                    src={assets.send_icon}
-                    alt="send icon"
-                    className="w-5 mt-5"
-                  />
+                <div className="flex items-center mt-5">
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <p className="font-light text-blue-500 text-md">
+                      Click Here to Visit{" "}
+                      <Image
+                        src={assets.send_icon}
+                        alt="send icon"
+                        className="w-5"
+                      />
+                    </p>
+                  </a>
                 </div>
               </div>
             </motion.div>
           ))}
         </motion.div>
-        <motion.a
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 1.1 }}
-          className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-[#fcf4ff] duration-500"
-          href=""
-        >
-          Show More{" "}
-          <Image
-            src={assets.right_arrow_bold}
-            alt="right arrow"
-            className="w-4"
-          />
-        </motion.a>
       </motion.div>
     </motion.div>
   );
