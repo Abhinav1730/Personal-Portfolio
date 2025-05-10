@@ -72,9 +72,9 @@ const Contact = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.1, duration: 0.6 }}
             name="name"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 p-3 text-sm font-extralight outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             type="text"
-            placeholder="Enter Your Name"
+            placeholder="Your Name"
             required
           />
           <motion.input
@@ -82,9 +82,9 @@ const Contact = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.6 }}
             name="email"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 p-3 text-sm font-extralight outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             type="email"
-            placeholder="Enter Your Email"
+            placeholder="Your Email"
             required
           />
         </div>
