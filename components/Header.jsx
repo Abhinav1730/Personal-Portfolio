@@ -20,11 +20,11 @@ const Header = () => {
         Full Stack Developer
       </h1>
       <p className="max-w-2xl mx-auto font-extralight">
-        I'm a full-stack developer and persuing Engineering(ECE)
-        specializing in the MERN stack, Next.js, and RESTful APIs along with
-        slight Devops and ML. Passionate about solving real-world problems
-        through technology and constantly exploring new tools and frameworks to
-        enhance performance and user experience.
+        I'm a full-stack developer and persuing Engineering(ECE) specializing in
+        the MERN stack, Next.js, and RESTful APIs along with slight Devops and
+        ML. Passionate about solving real-world problems through technology and
+        constantly exploring new tools and frameworks to enhance performance and
+        user experience.
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
@@ -46,6 +46,37 @@ const Header = () => {
           My Resume{" "}
           <Image src={assets.download_icon} alt="Profile Pic" className="w-4" />
         </a>
+      </div>
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/Abhinav1730"
+              className="px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/abhinav-saxena-124a81360"
+              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://leetcode.com/u/abhinav3009/"
+              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+            >
+              Leetcode
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
