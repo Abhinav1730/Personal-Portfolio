@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -74,44 +74,36 @@ const Header = () => {
         </motion.a>
       </div>
       <div className="flex flex-col sm:flex-row items-center gap-4">
-        <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0 sm:flex-row">
-          <li>
-            <motion.a
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
-              target="_blank"
-              href="https://github.com/Abhinav1730"
-              className="px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2"
-            >
-              GitHub
-            </motion.a>
-          </li>
-          <li>
-            <motion.a
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.6 }}
-              target="_blank"
-              href="https://www.linkedin.com/in/abhinav-saxena-124a81360"
-              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
-            >
-              LinkedIn
-            </motion.a>
-          </li>
-          <li>
-            <motion.a
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.8 }}
-              target="_blank"
-              href="https://leetcode.com/u/abhinav3009/"
-              className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
-            >
-              Leetcode
-            </motion.a>
-          </li>
-        </ul>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.4 }}
+          target="_blank"
+          href="https://github.com/Abhinav1730"
+          className="px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2"
+        >
+          GitHub
+        </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.6 }}
+          target="_blank"
+          href="https://www.linkedin.com/in/abhinav-saxena-124a81360"
+          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+        >
+          LinkedIn
+        </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.8 }}
+          target="_blank"
+          href="https://leetcode.com/u/abhinav3009/"
+          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+        >
+          Leetcode
+        </motion.a>
       </div>
     </div>
   );
