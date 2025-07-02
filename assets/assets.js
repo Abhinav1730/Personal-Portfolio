@@ -17,6 +17,7 @@ import right_arrow_white from "./right-arrow-white.png";
 import ai_for_services from "./ai-for-services.jpg";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
+import logo_plans24 from "./logo-plans24.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import program from "./program.webp";
@@ -50,6 +51,7 @@ export const assets = {
   user_image,
   code_icon,
   code_icon_dark,
+  logo_plans24,
   edu_icon,
   edu_icon_dark,
   project_icon,
@@ -98,8 +100,15 @@ export const assets = {
 
 export const workData = [
   {
+    icon: assets.logo_plans24,
+    link: "https://plans24.vercel.app/",
+    title: "Plans24 - A Full Stack AI Travel Planner",
+    description:
+      "Plans24 is a full-stack web application that empowers travelers to create detailed, customized trip itineraries effortlessly. With a sleek, intuitive landing page and a straightforward trip creation flow, users can quickly plan their dream vacations in minutes.",
+  },
+  {
     icon: assets.logo_of_reliefcare,
-    link:"https://reliefcare-frontend.onrender.com/",
+    link: "https://reliefcare-frontend.onrender.com/",
     title: "ReliefCare - A Full Stack Application",
     description:
       "ReliefCare is an advanced doctor appointment booking application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application aims to streamline the healthcare experience by allowing patients to find doctors nearby, book appointments, and engage in online consultations—all from the comfort of their homes. The core concept addresses real-life challenges faced by patients, such as long hospital queues and complex appointment procedures.",
@@ -115,7 +124,7 @@ export const workData = [
     title: "DeepSeek AI Clone",
     description:
       "Developed a modern, full-stack AI chat application inspired by ChatGPT and DeepSeek, leveraging Google’s Gemini API for advanced natural language processing. Built with Next.js 13 App Router and a modular architecture to enable scalable, efficient server and client-side rendering. Integrated Clerk for secure user authentication and MongoDB for persistent chat history and session data. Designed the platform to support seamless natural language interactions,serving as a robust foundation for real-world AI applications. This project also highlights practical implementation of prompt engineering and provides a scalable template for extending features like voice-to-text, image input, and prompt history.",
-    link:"https://deep-seek-ai-clone-black.vercel.app/"
+    link: "https://deep-seek-ai-clone-black.vercel.app/",
   },
 ];
 
