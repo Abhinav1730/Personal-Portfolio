@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
+  const viewportOptions = { once: false, amount: 0.1, margin: "-100px" };
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,22 +31,25 @@ const Contact = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      viewport={viewportOptions}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       id="contact"
       className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
     >
       <motion.h4
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center mb-2 text-2xl font-medium"
       >
         Connect with Me!
       </motion.h4>
       <motion.h2
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center text-5xl font-mono"
       >
         Get in Touch
@@ -53,7 +57,8 @@ const Contact = () => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.7, duration: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-light"
       >
         I would love to hear from you! If yo have any questions , comments or
@@ -62,15 +67,17 @@ const Contact = () => {
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto"
       >
         <div className="grid grid-cols-2 gap-6 mt-10 mb-8">
           <motion.input
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
+            viewport={viewportOptions}
+            transition={{ duration: 0.25, ease: "easeOut" }}
             name="name"
             className="flex-1 p-3 text-sm font-extralight outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             type="text"
@@ -78,9 +85,10 @@ const Contact = () => {
             required
           />
           <motion.input
-            initial={{ x: 50, opacity: 0 }}
+            initial={{ x: 20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
+            viewport={viewportOptions}
+            transition={{ duration: 0.25, ease: "easeOut" }}
             name="email"
             className="flex-1 p-3 text-sm font-extralight outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             type="email"
@@ -89,9 +97,10 @@ const Contact = () => {
           />
         </div>
         <motion.textarea
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.3, duration: 0.6 }}
+          viewport={viewportOptions}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           name="message"
           rows="6"
           placeholder="Enter your Message"

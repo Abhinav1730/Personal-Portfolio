@@ -46,6 +46,9 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import postman from "./postman.webp";
 import cursor_app_icon from "./cursor-app-icon.png";
 import thunderclient from "./thunderclient.jpg";
+import legalyzer from "./legalyzer_icon.png";
+import formai from "./formai_icon.png";
+
 
 export const assets = {
   user_image,
@@ -60,8 +63,10 @@ export const assets = {
   firebase,
   figma,
   git,
+  formai,
   mongodb,
   thunderclient,
+  legalyzer,
   right_arrow_white,
   logo,
   logo_dark,
@@ -100,6 +105,13 @@ export const assets = {
 
 export const workData = [
   {
+    icon: assets.legalyzer,
+    link: "https://ai-legal-document-analyzer.vercel.app/",
+    title: "Legalyzer - A Full Stack AI Legal Helper",
+    description:
+      "A powerful AI-powered legal document analysis platform that extracts and analyzes legal clauses from contracts, agreements, and legal documents using Google Gemini AI. Built with modern web technologies and featuring multi-language support.",
+  },
+  {
     icon: assets.logo_plans24,
     link: "https://plans24.vercel.app/",
     title: "Plans24 - A Full Stack AI Travel Planner",
@@ -107,17 +119,18 @@ export const workData = [
       "Plans24 is a full-stack web application that empowers travelers to create detailed, customized trip itineraries effortlessly. With a sleek, intuitive landing page and a straightforward trip creation flow, users can quickly plan their dream vacations in minutes.",
   },
   {
+    icon: assets.formai,
+    link: "https://ai-powered-form-generator-ten.vercel.app",
+    title: "FormAI - A Full Stack AI Form Generator",
+    description:
+      "A powerful AI-powered form generator that creates custom forms based on user requirements using Google Gemini AI. Built with modern web technologies such as Next.js, Tailwind CSS, and TypeScript, and featuring multi-language support.It also includes a responsive design and a user-friendly interface.",
+  },
+  {
     icon: assets.logo_of_reliefcare,
     link: "https://reliefcare-frontend.onrender.com/",
     title: "ReliefCare - A Full Stack Application",
     description:
       "ReliefCare is an advanced doctor appointment booking application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application aims to streamline the healthcare experience by allowing patients to find doctors nearby, book appointments, and engage in online consultations—all from the comfort of their homes. The core concept addresses real-life challenges faced by patients, such as long hospital queues and complex appointment procedures.",
-  },
-  {
-    icon: assets.aivami,
-    title: "AIvaMI - A Full Stack AI Assistance",
-    description:
-      " Built an AI-powered mock interview platform using Next.js, Vapi AI, Supabase, and Google Cloud for authentication,enabling users to conduct realistic voice-based interviews with an AI assistant.Implemented the Vapi AI API tohandle real-time voice input and output, allowing dynamic conversation flow through speech synthesis and recognition.Integrated Supabase for real-time database management and user data storage, while Google Cloud Authenticationensured secure and scalable login functionality. Designed an intuitive and responsive UI with ShadCN and Lucide-React, delivering a polished user experience that mirrors real-world interview scenarios. This project demonstrates a deep understanding of modern full-stack development, voice interface integration, and secure authentication systems.",
   },
   {
     icon: assets.deepseek,
@@ -154,13 +167,13 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Frameworks",
-    description: "React Js, Next Js, Node Js, Express Js",
+    description: "React Js, Next Js, Node Js, Express Js, LangGraph, React Flow, TensorFlow, LangChain",
   },
   {
     icon: assets.program,
     iconDark: assets.code_icon_dark,
     title: "Programming Languages",
-    description: "JavaScript , Python ,C++",
+    description: "JavaScript ,TypeScript ,Python ,C++",
   },
   {
     icon: assets.edu_icon,
@@ -186,4 +199,36 @@ export const toolsData = [
   assets.thunderclient,
   assets.firebase,
   assets.figma,
+];
+
+export const internshipsData = [
+  {
+    companyName: "TechlyAssist",
+    role: "Full Stack AI Developer Intern",
+    description: {
+      brief: "Worked on various projects involving AI integration and automation, developing intelligent solutions to enhance user experience and streamline processes.",
+      points: [
+        "Worked on various projects and automated processes using various LLM APIs and AI APIs",
+        "Integrated Voice assistant using Vapi AI in an avatar form for an edtech platform",
+        "Implemented face recognition using AI for crypto platform security and authentication",
+        "Implemented security checks using AI to ensure platform safety and prevent fraudulent activities",
+        "Developed various AI applications focused on delivering exceptional user experience",
+        "Optimized values and responses through prompt engineering techniques",
+      ],
+    },
+    duration: "June 2025 - Ongoing",
+  },
+  {
+    companyName: "The Inceptioners",
+    role: "Full Stack Developer Intern",
+    description: {
+      brief: "Focused on backend development and AI integration, working on authentication systems and building interactive mapping features for real estate applications.",
+      points: [
+        "Worked on backend systems of applications, primarily focusing on authentication and AI integration",
+        "Added a feature using Google Maps API for a real estate firm where users can mark properties on the map",
+        "Handled markers and area selection functionality using Leaflet.js for interactive map features",
+      ],
+    },
+    duration: "March 2024 - June 2024",
+  }
 ];

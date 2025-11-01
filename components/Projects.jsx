@@ -4,26 +4,31 @@ import React from "react";
 import { motion } from "motion/react";
 
 const Projects = () => {
+  const viewportOptions = { once: false, amount: 0.1, margin: "-100px" };
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      viewport={viewportOptions}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center mb-2 text-2xl font-semibold"
       >
         My Portfolio
       </motion.h4>
       <motion.h2
-        initial={{ y: -20, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center text-5xl font-semibold"
       >
         My Projects
@@ -32,7 +37,8 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          viewport={viewportOptions}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="grid grid-cols-[repeat(auto-fit)] gap-6 my-10"
         >
           {workData.map(({ title, description, icon, link }, index) => (

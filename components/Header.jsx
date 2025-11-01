@@ -36,21 +36,8 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-5xl lg:text-6xl font-extrabold"
       >
-        Full Stack Developer
+        Full Stack AI Developer
       </motion.h1>
-
-      {/* Description */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
-        className="max-w-2xl text-sm sm:text-base font-extralight leading-relaxed"
-      >
-        I'm a full-stack developer and pursuing Engineering (ECE) specializing in the MERN stack,
-        Next.js, and RESTful APIs, along with some DevOps and ML. Passionate about solving
-        real-world problems through technology and continuously exploring new tools to enhance
-        performance and user experience.
-      </motion.p>
 
       {/* Action Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-4">
@@ -74,7 +61,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           href="/resume.pdf"
-          download
+          download="Abhinav_Saxena_Full_Stack_AI_Developer.pdf"
           className="px-8 py-2 rounded-full border border-gray-500 flex items-center gap-2"
         >
           My Resume

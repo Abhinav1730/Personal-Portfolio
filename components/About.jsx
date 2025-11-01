@@ -4,26 +4,31 @@ import React from "react";
 import { motion } from "motion/react";
 
 const About = () => {
+  const viewportOptions = { once: false, amount: 0.1, margin: "-100px" };
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      viewport={viewportOptions}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       id="about"
       className="w-full px-6 sm:px-10 md:px-[10%] py-10 scroll-mt-20"
     >
       <motion.h4
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center mb-2 text-xl sm:text-2xl font-semibold"
       >
         Introduction
       </motion.h4>
       <motion.h2
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.25, ease: "easeOut" }}
         className="text-center text-3xl sm:text-5xl font-semibold"
       >
         About Me
@@ -32,14 +37,16 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 my-10"
       >
         {/* Profile Image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          viewport={viewportOptions}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="w-48 sm:w-64 md:w-80 flex-shrink-0"
         >
           <Image
@@ -53,16 +60,19 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={viewportOptions}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="flex-1 w-full"
         >
           <p className="mb-8 text-sm sm:text-base max-w-3xl font-extralight leading-relaxed text-gray-800 dark:text-gray-200">
-            I'm a passionate Full Stack Developer skilled in React, Node.js, and
-            modern web frameworks. I build scalable, user-friendly applications
-            like AIvaMI, ReliefCare, and DeepSeek AI Clone — blending technical
-            expertise with real-world problem-solving. With internship
-            experience and a focus on full-stack innovation, I thrive on
-            transforming ideas into impactful digital solutions.
+            I'm a passionate Full Stack Developer with expertise in React, Next.js,Node.js, and various modern web frameworks, 
+            specializing in AI integration and intelligent system development. I've built scalable, production-ready 
+            applications like Legalyzer, Plans24, FormAI, ReliefCare, and DeepSeek AI Clone, seamlessly integrating LLM APIs, AI-powered 
+            features, and advanced technologies such as face recognition and voice assistants. With hands-on internship 
+            experience at leading tech companies, I've delivered impactful solutions including backend authentication 
+            systems, AI-driven security implementations, and interactive mapping features. My focus on full stack 
+            innovation, combined with expertise in prompt engineering and AI optimization, enables me to transform 
+            complex ideas into user-centric digital solutions that drive business value.
           </p>
 
           {/* Info Cards */}
@@ -86,9 +96,10 @@ const About = () => {
 
           {/* Tools Section */}
           <motion.h4
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            viewport={viewportOptions}
+            transition={{ duration: 0.25, ease: "easeOut" }}
             className="my-6 text-gray-700 dark:text-gray-300 font-medium text-lg"
           >
             Tools I use
@@ -97,7 +108,8 @@ const About = () => {
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={viewportOptions}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="flex flex-wrap gap-4"
           >
             {toolsData.map((tool, index) => (
