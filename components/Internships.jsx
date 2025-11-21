@@ -10,39 +10,58 @@ const Internships = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={viewportOptions}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       id="internships"
-      className="w-full px-6 sm:px-10 md:px-[10%] py-10 scroll-mt-20"
+      className="w-full px-6 sm:px-10 md:px-[10%] py-16 sm:py-20 scroll-mt-20 bg-white dark:bg-[#11001F]"
     >
       <motion.h4
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={viewportOptions}
-        transition={{ duration: 0.25, ease: "easeOut" }}
-        className="text-center mb-2 text-xl sm:text-2xl font-semibold text-gray-700 dark:text-gray-300"
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="text-center mb-2 text-xl sm:text-2xl font-semibold text-gray-600 dark:text-gray-400"
       >
         Experience
       </motion.h4>
       <motion.h2
-        initial={{ opacity: 0, y: -10 }}
+        initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={viewportOptions}
-        transition={{ duration: 0.25, ease: "easeOut" }}
-        className="text-center text-3xl sm:text-5xl font-semibold text-gray-800 dark:text-white"
+        transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+        className="text-center text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white mb-4"
       >
         Work Experience - Internships
       </motion.h2>
 
-      <div className="mt-10 space-y-12">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={viewportOptions}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-10 space-y-8 sm:space-y-12"
+      >
         {internshipsData.map((internship, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOptions}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="border border-gray-400 dark:border-gray-600 rounded-2xl p-6 sm:p-8 lg:p-10 hover:bg-[#fcf4ff] dark:hover:bg-[#1e1b2f] transition-all duration-300"
+            transition={{ 
+              duration: 0.5, 
+              delay: 0.3 + index * 0.1,
+              ease: [0.25, 0.46, 0.45, 0.94]
+            }}
+            whileHover={{ 
+              y: -4,
+              scale: 1.01,
+              transition: { duration: 0.3 }
+            }}
+            className="group border-2 border-gray-300 dark:border-gray-700 rounded-2xl p-6 sm:p-8 lg:p-10 bg-white dark:bg-[#1a0033] hover:bg-gradient-to-br hover:from-[#fcf4ff] hover:to-[#f0e6ff] dark:hover:from-[#2a0044] dark:hover:to-[#1e1b2f] hover:shadow-xl hover:shadow-purple-200/50 dark:hover:shadow-purple-900/30 transition-all duration-500 relative overflow-hidden"
           >
+            {/* Decorative gradient overlay on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-blue-500/0 group-hover:from-purple-500/5 group-hover:to-blue-500/5 transition-all duration-500 rounded-2xl"></div>
+            
+            <div className="relative z-10">
             {/* Company Name and Role */}
             <div className="mb-6">
               <motion.h3
@@ -105,9 +124,10 @@ const Internships = () => {
                 <p>{internship.description}</p>
               )}
             </motion.div>
+            </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
