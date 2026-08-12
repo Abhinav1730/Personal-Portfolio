@@ -204,31 +204,18 @@ export const toolsData = [
 export const internshipsData = [
   {
     companyName: "TechlyAssist",
-    role: "Full Stack AI Developer Intern",
+    role: "Full Stack AI Developer",
     description: {
-      brief: "Worked on various projects involving AI integration and automation, developing intelligent solutions to enhance user experience and streamline processes.",
+      brief:
+        "Building production AI products across research agents, career platforms, legal-tech, voice meetings, and scientific research systems — from backend pipelines and LLM integrations to full-stack features shipped to users.",
       points: [
-        "Worked on various projects and automated processes using various LLM APIs and AI APIs",
-        "Integrated Voice assistant using Vapi AI in an avatar form for an edtech platform",
-        "Implemented face recognition using AI for crypto platform security and authentication",
-        "Implemented security checks using AI to ensure platform safety and prevent fraudulent activities",
-        "Developed various AI applications focused on delivering exceptional user experience",
-        "Optimized values and responses through prompt engineering techniques",
+        "Aion Super Agent — Built a full-stack AI research agent (Next.js, FastAPI, Celery) that accepts prompts, runs async research tasks, and generates structured outputs/PDFs; deployed on Docker with PostgreSQL, Redis, and Traefik.",
+        "Hulchul.in — Contributed to Raj, an AI career agent platform for profile building, job matching, mock interviews, and warm introductions across a TypeScript monorepo with matching pipelines and Hermes agent workflows.",
+        "LlamaLand Legal — Shipped features on a multi-tenant real estate/legal platform with Leaflet property maps, document OCR, and AI insights; built LangGraph Python agents for automated property price-radius analysis.",
+        "SmartMeet (Meeting Suite) — Developed an AI meeting platform with Vapi voice avatars and realtime voice sessions; integrated live Synapse research tools so meetings can fetch, save, and hand off research mid-conversation.",
+        "SynapseCore — Worked on a unified AI research platform hosting scientific plugins (protein folding, DNA synthesis, chip design) with isolated schemas, BullMQ agent workers, and a Next.js / Express / FastAPI stack.",
       ],
     },
-    duration: "June 2025 - Ongoing",
+    duration: "Sep 2025 - Present",
   },
-  {
-    companyName: "The Inceptioners",
-    role: "Full Stack Developer Intern",
-    description: {
-      brief: "Focused on backend development and AI integration, working on authentication systems and building interactive mapping features for real estate applications.",
-      points: [
-        "Worked on backend systems of applications, primarily focusing on authentication and AI integration",
-        "Added a feature using Google Maps API for a real estate firm where users can mark properties on the map",
-        "Handled markers and area selection functionality using Leaflet.js for interactive map features",
-      ],
-    },
-    duration: "March 2024 - June 2024",
-  }
 ];
