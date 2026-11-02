@@ -1,5 +1,85 @@
 @import "tailwindcss";
 
-* {
-  font-family: Ovo;
+@theme {
+  --font-display: var(--font-syne), sans-serif;
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --color-ink: #12061c;
+  --color-panel: #1c0e2a;
+  --color-line: #3a2a48;
+  --color-soft: #c9bfd4;
+  --color-coral: #ff8a75;
+  --color-teal: #39d0c3;
+}
+
+body {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.skill-ring {
+  --radius: 200px;
+  transform-style: preserve-3d;
+  animation: skill-spin 32s linear infinite;
+}
+
+.skill-tilt {
+  transform-style: preserve-3d;
+  animation: skill-float 7s ease-in-out infinite;
+}
+
+.skill-card {
+  box-shadow: 0 0 36px rgba(255, 111, 89, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  border-color: var(--color-teal);
+  box-shadow: 0 0 48px rgba(57, 208, 195, 0.35);
+}
+
+@keyframes skill-float {
+  0%,
+  100% {
+    transform: rotateX(-7deg) translateY(-8px);
+  }
+  50% {
+    transform: rotateX(-3deg) translateY(8px);
+  }
+}
+
+.skill-stage:hover .skill-ring,
+.skill-stage:hover .skill-tilt {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  .skill-ring {
+    --radius: 300px;
+  }
+}
+
+/* Narrower ring while Skills shares a row with About */
+@media (min-width: 1280px) {
+  .skill-ring {
+    --radius: 220px;
+  }
+}
+
+@keyframes skill-spin {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-ring,
+  .skill-tilt {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
 }

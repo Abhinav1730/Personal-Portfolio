@@ -1,28 +1,30 @@
-import { Outfit, Ovo } from "next/font/google";
+import { DM_Sans, Syne } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const syne = Syne({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700", "800"],
+  variable: "--font-syne",
 });
 
-const ovo = Ovo({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400"],
+  variable: "--font-dm-sans",
 });
 
 export const metadata = {
-  title: "Portfolio - Abhinav Saxena",
+  title: "Abhinav Saxena - Full Stack AI Developer & Founding Engineer",
   description:
-    "Personal Portfolio of Abhinav Saxena (Full Stack Developer) , made using Next.js",
+    "Portfolio of Abhinav Saxena, a Full Stack AI Developer, Backend Developer, Founding Engineer, Forward Deployed Engineer and Product Engineer.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden dark:bg-[#11001F] dark:text-white`}
-      >
+    <html
+      lang="en"
+      className={`scroll-smooth ${syne.variable} ${dmSans.variable}`}
+    >
+      <body className="font-sans antialiased overflow-x-hidden">
         {children}
       </body>
     </html>

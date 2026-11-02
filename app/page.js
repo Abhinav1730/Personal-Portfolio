@@ -1,46 +1,30 @@
 "use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Internships from "@/components/Internships";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
-import Services from "@/components/Services";
-import { useEffect, useState } from "react";
+import Skills from "@/components/Skills";
+import VoiceCore from "@/components/VoiceCore";
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme:dark)").matches)
-    ) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
-  }, []);
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
-    }
-  }, [isDarkMode]);
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Internships isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
-      <Projects isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
+      <VoiceCore />
+      <Navbar />
+      <main id="top" className="relative">
+        <Header />
+        <div className="grid xl:grid-cols-2 2xl:grid-cols-[3fr_2fr]">
+          <About />
+          <Skills />
+        </div>
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

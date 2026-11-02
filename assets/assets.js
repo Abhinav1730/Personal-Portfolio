@@ -1,221 +1,178 @@
-import user_image from "./user-image.jpeg";
-import code_icon from "./code-icon.png";
-import code_icon_dark from "./code-icon-dark.png";
-import edu_icon from "./edu-icon.png";
-import edu_icon_dark from "./edu-icon-dark.png";
-import project_icon from "./project-icon.png";
-import project_icon_dark from "./project-icon-dark.png";
-import blockchain from "./blockchain.jpeg";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import aivami from "./aivami.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import mongodb from "./mongodb.png";
-import deepseek from "./deepseek.png";
-import right_arrow_white from "./right-arrow-white.png";
-import ai_for_services from "./ai-for-services.jpg";
-import logo from "./logo.png";
-import logo_dark from "./logo_dark.png";
-import logo_plans24 from "./logo-plans24.png";
-import mail_icon from "./mail_icon.png";
-import mail_icon_dark from "./mail_icon_dark.png";
-import program from "./program.webp";
 import profile_img from "./profile_img.jpeg";
-import download_icon from "./download-icon.png";
-import hand_icon from "./hand-icon.png";
-import header_bg_color from "./header-bg-color.png";
-import moon_icon from "./moon_icon.png";
-import sun_icon from "./sun_icon.png";
-import arrow_icon from "./arrow-icon.png";
-import arrow_icon_dark from "./arrow-icon-dark.png";
-import menu_black from "./menu-black.png";
-import supabase from "./supabase.png";
-import menu_white from "./menu-white.png";
-import close_black from "./close-black.png";
-import close_white from "./close-white.png";
-import web_icon from "./web-icon.jpg";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
-import right_arrow from "./right-arrow.png";
+import logo_plans24 from "./logo-plans24.png";
 import logo_of_reliefcare from "./logo of reliefcare.png";
-import send_icon from "./send-icon.png";
-import right_arrow_bold from "./right-arrow-bold.png";
-import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-import postman from "./postman.webp";
-import cursor_app_icon from "./cursor-app-icon.png";
-import thunderclient from "./thunderclient.jpg";
+import deepseek from "./deepseek.png";
 import legalyzer from "./legalyzer_icon.png";
 import formai from "./formai_icon.png";
 
+export const assets = { profile_img };
 
-export const assets = {
-  user_image,
-  code_icon,
-  code_icon_dark,
-  logo_plans24,
-  edu_icon,
-  edu_icon_dark,
-  project_icon,
-  project_icon_dark,
-  vscode,
-  firebase,
-  figma,
-  git,
-  formai,
-  mongodb,
-  thunderclient,
-  legalyzer,
-  right_arrow_white,
-  logo,
-  logo_dark,
-  mail_icon,
-  mail_icon_dark,
-  profile_img,
-  download_icon,
-  hand_icon,
-  header_bg_color,
-  moon_icon,
-  sun_icon,
-  arrow_icon,
-  arrow_icon_dark,
-  logo_of_reliefcare,
-  deepseek,
-  menu_black,
-  menu_white,
-  close_black,
-  close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
-  right_arrow,
-  send_icon,
-  right_arrow_bold,
-  right_arrow_bold_dark,
-  postman,
-  cursor_app_icon,
-  ai_for_services,
-  blockchain,
-  aivami,
-  program,
-  supabase,
+export const links = {
+  email: "abhinav.saxena1730@gmail.com",
+  github: "https://github.com/Abhinav1730",
+  linkedin: "https://www.linkedin.com/in/abhinav-saxena-124a81360",
 };
 
-export const workData = [
+export const roles = [
+  "Full Stack AI Developer",
+  "Backend Developer",
+  "Founding Engineer",
+  "Forward Deployed Engineer",
+  "Product Engineer",
+];
+
+export const aboutStory = [
+  "Hi, I'm Abhinav. I studied Electronics and Communication, but I fell in love with building software. I like the moment an idea stops being a conversation and becomes something real people can use.",
+  "These days I work across the whole product: the screen you see, the backend behind it, and the AI agents doing the thinking. I'm happiest with a messy problem, a lot of ownership, and a clear reason to ship.",
+  "When I'm away from the keyboard, you'll find me traveling somewhere new, out on a trek, or playing sports. They keep my head clear, and they've taught me that the best view usually comes after the hard part.",
+];
+
+export const interests = [
   {
-    icon: assets.legalyzer,
+    title: "At work",
+    items: [
+      "AI agents",
+      "Voice AI",
+      "Full stack products",
+      "Backend systems",
+      "Data pipelines",
+      "Shipping to production",
+    ],
+  },
+  {
+    title: "Away from work",
+    items: ["Traveling", "Trekking", "Sports"],
+  },
+];
+
+export const stats = [
+  { value: "6+", label: "products shipped" },
+  { value: "7", label: "live deployments" },
+  { value: "200/hr", label: "jobs through the pipeline" },
+  { value: "60-80%", label: "faster production data loads" },
+];
+
+export const experience = {
+  company: "TechlyAssist",
+  role: "Full Stack AI Developer",
+  location: "Remote",
+  duration: "Sep 2025 - Present",
+  points: [
+    "Built a Go backend service for e-signature and legal-contract workflows, with secure document signing, AI face and text recognition in images for identity verification, and end-to-end verification.",
+    "Built and shipped backend services and REST APIs in Python, Go and Node.js across 6+ products and 7 live deployments, from design to production debugging.",
+    "Built data pipelines that turn unstructured job postings into structured records, process them through separate pipeline stages, and route them to embeddings and vector search in Pinecone, handling 200 jobs per hour.",
+    "Cut production data-load latency from 10-15s to 2-6s by serving assets through Cloudflare's CDN and preloading data at login.",
+    "Reduced LLM costs by 45% through caching, model routing and other optimization techniques.",
+    "Deployed and ran services with Docker, Git, PM2, Render and Vercel, and integrated Resend, WhatsApp API and LLM APIs.",
+  ],
+  production: [
+    { name: "SmartMeet", link: "https://smartmeet.org" },
+    { name: "Hulchul", link: "https://hulchul.in" },
+    { name: "TextRaj", link: "https://textraj.com" },
+    { name: "UAIN", link: "https://uain.global" },
+    { name: "SynapseCore", link: "https://synapse.universa.science" },
+    { name: "UBI", link: "https://ubi.universa.science" },
+    { name: "Enlight", link: "https://enlight.universa.science" },
+    { name: "LlamaLink", link: "https://llamalink.co.in" },
+    { name: "Kalki", link: "https://kalki.now" },
+    { name: "AGA", link: "https://myaga.org" },
+  ],
+};
+
+export const featuredProjects = [
+  {
+    title: "Hulchul",
+    link: "https://hulchul.in",
+    stack: "Next.js, Node.js, Redis, Pinecone, LLM APIs",
+    description:
+      "A WhatsApp-based AI job-search agent with ElevenLabs voice mock interviews, backed by a pipeline running at 200 jobs per hour.",
+  },
+  {
+    title: "SynapseCore",
+    link: "https://synapse.universa.science",
+    stack: "Orchestration, Error Handling",
+    description:
+      "A multi-agent research pipeline with self-designed orchestration, context management and error handling, deployed for Universa AI.",
+  },
+  {
+    title: "SmartMeet",
+    link: "https://smartmeet.org",
+    stack: "LiveKit, React/Next.js, TypeScript, STT/TTS",
+    description:
+      "Real-time meeting workflows where a voice AI participant takes live actions inside connected applications.",
+  },
+  {
+    title: "UAIN",
+    link: "https://uain.global",
+    stack: "Next.js, TypeScript, APIs",
+    description:
+      "A live network where AI agents enrol, choose open research problems, submit work with sources, and verify each other's results.",
+  },
+];
+
+export const personalProjects = [
+  {
+    icon: legalyzer,
+    title: "Legalyzer",
+    description: "AI analysis of clauses in legal documents.",
     link: "https://ai-legal-document-analyzer.vercel.app/",
-    title: "Legalyzer - A Full Stack AI Legal Helper",
-    description:
-      "A powerful AI-powered legal document analysis platform that extracts and analyzes legal clauses from contracts, agreements, and legal documents using Google Gemini AI. Built with modern web technologies and featuring multi-language support.",
   },
   {
-    icon: assets.logo_plans24,
+    icon: logo_plans24,
+    title: "Plans24",
+    description: "AI travel itinerary planner.",
     link: "https://plans24.vercel.app/",
-    title: "Plans24 - A Full Stack AI Travel Planner",
-    description:
-      "Plans24 is a full-stack web application that empowers travelers to create detailed, customized trip itineraries effortlessly. With a sleek, intuitive landing page and a straightforward trip creation flow, users can quickly plan their dream vacations in minutes.",
   },
   {
-    icon: assets.formai,
+    icon: formai,
+    title: "FormAI",
+    description: "AI form generator built with Gemini.",
     link: "https://ai-powered-form-generator-ten.vercel.app",
-    title: "FormAI - A Full Stack AI Form Generator",
-    description:
-      "A powerful AI-powered form generator that creates custom forms based on user requirements using Google Gemini AI. Built with modern web technologies such as Next.js, Tailwind CSS, and TypeScript, and featuring multi-language support.It also includes a responsive design and a user-friendly interface.",
   },
   {
-    icon: assets.logo_of_reliefcare,
+    icon: logo_of_reliefcare,
+    title: "ReliefCare",
+    description: "MERN doctor appointment booking app.",
     link: "https://reliefcare-frontend.onrender.com/",
-    title: "ReliefCare - A Full Stack Application",
-    description:
-      "ReliefCare is an advanced doctor appointment booking application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application aims to streamline the healthcare experience by allowing patients to find doctors nearby, book appointments, and engage in online consultations—all from the comfort of their homes. The core concept addresses real-life challenges faced by patients, such as long hospital queues and complex appointment procedures.",
   },
   {
-    icon: assets.deepseek,
+    icon: deepseek,
     title: "DeepSeek AI Clone",
-    description:
-      "Developed a modern, full-stack AI chat application inspired by ChatGPT and DeepSeek, leveraging Google’s Gemini API for advanced natural language processing. Built with Next.js 13 App Router and a modular architecture to enable scalable, efficient server and client-side rendering. Integrated Clerk for secure user authentication and MongoDB for persistent chat history and session data. Designed the platform to support seamless natural language interactions,serving as a robust foundation for real-world AI applications. This project also highlights practical implementation of prompt engineering and provides a scalable template for extending features like voice-to-text, image input, and prompt history.",
+    description: "Full stack AI chat with saved history.",
     link: "https://deep-seek-ai-clone-black.vercel.app/",
   },
 ];
 
-export const serviceData = [
+export const skills = [
+  { title: "Languages", items: "Python, Go, TypeScript, JavaScript, SQL" },
   {
-    icon: assets.web_icon,
-    title: "Full Stack Development",
-    description:
-      "Full stack development with MERN and Next.js involves building web applications using MongoDB, Express.js, React, and Node.js, with Next.js adding server-side rendering and improved performance for React apps.",
+    title: "Backend and APIs",
+    items: "REST APIs, FastAPI, Django, Node.js, Express.js, data pipelines",
   },
   {
-    icon: assets.ai_for_services,
-    title: "AI Integration",
-    description:
-      "A full stack developer with AI integration expertise designs and builds complete applications that seamlessly blend user interfaces, server-side logic, and intelligent features. They leverage AI models and APIs—such as language processing, image recognition, or predictive analytics—to enhance functionality, automate tasks, and create smarter, data-driven user experiences across web and mobile platforms.",
+    title: "Databases",
+    items: "PostgreSQL, Redis, MongoDB, Firebase, Supabase",
   },
   {
-    icon: assets.blockchain,
-    title: "BlockChain Enthusiast",
-    description:
-      "A full stack developer who is a blockchain enthusiast builds comprehensive applications while integrating decentralized technologies. They develop smart contracts, work with blockchain protocols like Ethereum or Solana, and create secure, transparent, and trustless systems. Their expertise bridges traditional web development with emerging Web3 innovations, enabling features like crypto transactions, NFTs, and decentralized identity.",
-  },
-];
-
-export const infoList = [
-  {
-    icon: assets.code_icon,
-    iconDark: assets.code_icon_dark,
-    title: "Frameworks",
-    description: "React Js, Next Js, Node Js, Express Js, LangGraph, React Flow, TensorFlow, LangChain",
+    title: "Infrastructure",
+    items: "Docker, Git, GitHub, Cloudflare, Render, Vercel, SSH, PM2",
   },
   {
-    icon: assets.program,
-    iconDark: assets.code_icon_dark,
-    title: "Programming Languages",
-    description: "JavaScript ,TypeScript ,Python ,C++",
+    title: "Frontend",
+    items: "React.js, Next.js, TypeScript, HTML/CSS, Tailwind CSS",
   },
   {
-    icon: assets.edu_icon,
-    iconDark: assets.edu_icon_dark,
-    title: "Education",
-    description: "B.Tech in Electronics and Communication",
+    title: "Integrations",
+    items: "Resend, WhatsApp API, LLM APIs, Vapi AI, ElevenLabs",
   },
   {
-    icon: assets.project_icon,
-    iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "Built more than 5 projects",
+    title: "AI Development Tools",
+    items: "Cursor, Claude, Codex, Antigravity, Replit",
   },
 ];
 
-export const toolsData = [
-  assets.vscode,
-  assets.cursor_app_icon,
-  assets.git,
-  assets.mongodb,
-  assets.supabase,
-  assets.postman,
-  assets.thunderclient,
-  assets.firebase,
-  assets.figma,
-];
-
-export const internshipsData = [
-  {
-    companyName: "TechlyAssist",
-    role: "Full Stack AI Developer",
-    description: {
-      brief:
-        "Building production AI products across research agents, career platforms, legal-tech, voice meetings, and scientific research systems — from backend pipelines and LLM integrations to full-stack features shipped to users.",
-      points: [
-        "Aion Super Agent — Built a full-stack AI research agent (Next.js, FastAPI, Celery) that accepts prompts, runs async research tasks, and generates structured outputs/PDFs; deployed on Docker with PostgreSQL, Redis, and Traefik.",
-        "Hulchul.in — Contributed to Raj, an AI career agent platform for profile building, job matching, mock interviews, and warm introductions across a TypeScript monorepo with matching pipelines and Hermes agent workflows.",
-        "LlamaLand Legal — Shipped features on a multi-tenant real estate/legal platform with Leaflet property maps, document OCR, and AI insights; built LangGraph Python agents for automated property price-radius analysis.",
-        "SmartMeet (Meeting Suite) — Developed an AI meeting platform with Vapi voice avatars and realtime voice sessions; integrated live Synapse research tools so meetings can fetch, save, and hand off research mid-conversation.",
-        "SynapseCore — Worked on a unified AI research platform hosting scientific plugins (protein folding, DNA synthesis, chip design) with isolated schemas, BullMQ agent workers, and a Next.js / Express / FastAPI stack.",
-      ],
-    },
-    duration: "Sep 2025 - Present",
-  },
-];
+export const education = {
+  degree: "B.Tech, Electronics & Communication Engineering",
+  school: "KIET Group of Institutions, Ghaziabad (AKTU)",
+  year: "June 2026",
+};
