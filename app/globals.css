@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
-* {
-  font-family: Ovo;
+@theme {
+  --font-display: var(--font-syne), sans-serif;
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --color-ink: #12061c;
+  --color-panel: #1c0e2a;
+  --color-line: #3a2a48;
+  --color-soft: #c9bfd4;
+  --color-coral: #ff8a75;
+  --color-teal: #39d0c3;
+}
+
+body {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
 }
