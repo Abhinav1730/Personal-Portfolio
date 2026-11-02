@@ -16,10 +16,12 @@ export default function Home() {
       <Navbar />
       <main id="top" className="relative">
         <Header />
-        <About />
+        <div className="grid xl:grid-cols-2 2xl:grid-cols-[3fr_2fr]">
+          <About />
+          <Skills />
+        </div>
         <Experience />
         <Projects />
-        <Skills />
         <Contact />
       </main>
       <Footer />

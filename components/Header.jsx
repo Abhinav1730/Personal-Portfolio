@@ -78,9 +78,6 @@ const Header = () => {
           <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white">
             LinkedIn
           </a>
-          <a href={links.leetcode} target="_blank" rel="noopener noreferrer" className="hover:text-white">
-            LeetCode
-          </a>
         </div>
       </motion.div>
     </div>

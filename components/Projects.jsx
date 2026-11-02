@@ -6,7 +6,7 @@ import TiltCard from "./TiltCard";
 
 const Projects = () => {
   return (
-    <Section id="work" label="Projects" title="Selected work">
+    <Section id="work" label="Projects" title="Some Production Projects">
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
         {featuredProjects.map(({ title, stack, description, link }) => (
           <TiltCard key={title} className="rounded-2xl border border-line bg-panel/90 p-6 hover:border-coral transition-colors">

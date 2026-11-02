@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 export const metadata = {
   title: "Abhinav Saxena - Full Stack AI Developer & Founding Engineer",
   description:
-    "Portfolio of Abhinav Saxena, a Full Stack AI Developer, Founding Engineer, Forward Deployed Engineer and Product Engineer.",
+    "Portfolio of Abhinav Saxena, a Full Stack AI Developer, Backend Developer, Founding Engineer, Forward Deployed Engineer and Product Engineer.",
 };
 
 export default function RootLayout({ children }) {

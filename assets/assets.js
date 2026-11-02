@@ -11,11 +11,11 @@ export const links = {
   email: "abhinav.saxena1730@gmail.com",
   github: "https://github.com/Abhinav1730",
   linkedin: "https://www.linkedin.com/in/abhinav-saxena-124a81360",
-  leetcode: "https://leetcode.com/u/abhinav3009/",
 };
 
 export const roles = [
   "Full Stack AI Developer",
+  "Backend Developer",
   "Founding Engineer",
   "Forward Deployed Engineer",
   "Product Engineer",
@@ -58,10 +58,11 @@ export const experience = {
   location: "Remote",
   duration: "Sep 2025 - Present",
   points: [
-    "Built a Go backend service for e-signature and legal-contract workflows, with secure document signing and verification end-to-end.",
+    "Built a Go backend service for e-signature and legal-contract workflows, with secure document signing, AI face and text recognition in images for identity verification, and end-to-end verification.",
     "Built and shipped backend services and REST APIs in Python, Go and Node.js across 6+ products and 7 live deployments, from design to production debugging.",
-    "Built a data pipeline that turns unstructured job postings into structured records and routes them to embeddings and vector search, processing 200 jobs per hour.",
+    "Built data pipelines that turn unstructured job postings into structured records, process them through separate pipeline stages, and route them to embeddings and vector search in Pinecone, handling 200 jobs per hour.",
     "Cut production data-load latency from 10-15s to 2-6s by serving assets through Cloudflare's CDN and preloading data at login.",
+    "Reduced LLM costs by 45% through caching, model routing and other optimization techniques.",
     "Deployed and ran services with Docker, Git, PM2, Render and Vercel, and integrated Resend, WhatsApp API and LLM APIs.",
   ],
   production: [
@@ -74,7 +75,7 @@ export const experience = {
     { name: "Enlight", link: "https://enlight.universa.science" },
     { name: "LlamaLink", link: "https://llamalink.co.in" },
     { name: "Kalki", link: "https://kalki.now" },
-    { name: "AGA" },
+    { name: "AGA", link: "https://myaga.org" },
   ],
 };
 
